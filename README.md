@@ -585,21 +585,18 @@ Error responses do not intentionally include stack traces, environment variables
 
 ## Deployment
 
-The application can be deployed on a platform capable of running a Python web service or Docker container.
+The API is deployed on Render.
 
-Recommended start command:
+- Base URL: `https://sust-hackathon-2026-cx2b.onrender.com`
+- Health endpoint: `https://sust-hackathon-2026-cx2b.onrender.com/health`
+- Analyze endpoint: `https://sust-hackathon-2026-cx2b.onrender.com/analyze-ticket`
+- Interactive API documentation: `https://sust-hackathon-2026-cx2b.onrender.com/docs`
+
+### Production start command
 
 ```bash
 uvicorn app.main:app --host 0.0.0.0 --port $PORT
 ```
-
-Current deployment status:
-
-```text
-Live URL: Not yet deployed
-```
-
-This section should be updated with the final public HTTPS base URL after deployment.
 
 ---
 
